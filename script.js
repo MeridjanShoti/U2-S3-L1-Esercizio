@@ -35,7 +35,7 @@ class Pet {
     this.breed = _breed;
   }
   compareOwner(y) {
-    if (this.ownerName === y.ownerName) {
+    if (this.ownerName.toLowerCase() === y.ownerName.toLowerCase()) {
       return `${this.petName} and ${y.petName} have the same owner`;
     } else {
       return `${this.petName} and ${y.petName} have different owners`;
@@ -76,14 +76,14 @@ document.getElementById("compare").addEventListener("click", () => {
   let pet2 = document.getElementById("pet2").value;
   function findKey1() {
     for (key in pets) {
-      if (pets[key].petName.toLowerCase() === pet1.toLowerCase()) {
+      if (pets[key].petName === pet1) {
         return key;
       }
     }
   }
   function findKey2() {
     for (key in pets) {
-      if (pets[key].petName.toLowerCase() === pet2.toLowerCase()) {
+      if (pets[key].petName === pet2) {
         return key;
       }
     }
