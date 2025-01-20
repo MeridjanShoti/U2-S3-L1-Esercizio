@@ -76,14 +76,14 @@ document.getElementById("compare").addEventListener("click", () => {
   let pet2 = document.getElementById("pet2").value;
   function findKey1() {
     for (key in pets) {
-      if (pets[key].petName === pet1) {
+      if (pets[key].petName.toLowerCase() === pet1.toLowerCase()) {
         return key;
       }
     }
   }
   function findKey2() {
     for (key in pets) {
-      if (pets[key].petName === pet2) {
+      if (pets[key].petName.toLowerCase() === pet2.toLowerCase()) {
         return key;
       }
     }
