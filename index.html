@@ -4,22 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <h1>Esercizio U2-S3-L1</h1>
     <main>
       <form action="get">
-        <label for="petName">Pet Name</label>
-        <input type="text" id="petName" name="petName" />
-        <br />
-        <label for="ownerName">Owner Name</label>
-        <input type="text" id="ownerName" name="ownerName" />
-        <br />
-        <label for="species">Species</label>
-        <input type="text" id="species" name="species" />
-        <br />
-        <label for="breed">Breed</label>
-        <input type="text" id="breed" name="breed" />
+        <div>
+          <label for="petName">Pet Name</label>
+          <input type="text" id="petName" name="petName" />
+        </div>
+
+        <div>
+          <label for="ownerName">Owner Name</label>
+          <input type="text" id="ownerName" name="ownerName" />
+        </div>
+
+        <div>
+          <label for="species">Species</label>
+          <input type="text" id="species" name="species" />
+        </div>
+
+        <div>
+          <label for="breed">Breed</label>
+          <input type="text" id="breed" name="breed" />
+        </div>
 
         <button type="submit">Submit</button>
         <button type="reset">Restart</button>
@@ -27,10 +36,12 @@
       <ul id="petList"></ul>
     </main>
 
-    <h2>Compare Pet Owners</h2>
-    <select name="pet1" id="pet1"></select>
-    <select name="pet2" id="pet2"></select>
-    <button id="compare">Compare Owners</button>
-    <script src="./script.js"></script>
+    <div class="compareOwners">
+      <h2>Compare Pet Owners</h2>
+      <select name="pet1" id="pet1"></select>
+      <select name="pet2" id="pet2"></select>
+      <button id="compare">Compare Owners</button>
+      <script src="./script.js"></script>
+    </div>
   </body>
 </html>

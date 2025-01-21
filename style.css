@@ -1,0 +1,22 @@
+h1 {
+  text-align: center;
+}
+form {
+  margin: auto;
+  max-width: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+form > div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.compareOwners {
+  margin: auto;
+  text-align: center;
+}
+button {
+  margin-bottom: 1rem;
+}
